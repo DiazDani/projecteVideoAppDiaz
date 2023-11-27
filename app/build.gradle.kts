@@ -5,7 +5,12 @@ plugins {
 
 android {
     namespace = "com.sopa.projectevideoappdiaz"
-    compileSdk = 33
+    compileSdk = 34
+
+
+    buildFeatures {
+        dataBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.sopa.projectevideoappdiaz"

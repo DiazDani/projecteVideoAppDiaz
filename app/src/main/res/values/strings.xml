@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">projecteVideoAppDiaz</string>
+    <string name="la_app_del_bobby">LA APP DEL BOBBY</string>
+    <string name="name">Name</string>
+    <string name="inserta_el_codi_de_la_peli_que_vols_veure">INSERTA EL CODI DE LA PELI QUE VOLS VEURE:</string>
 </resources>
