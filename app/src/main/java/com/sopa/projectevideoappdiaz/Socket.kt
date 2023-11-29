@@ -9,7 +9,7 @@ object Socket {
     @Synchronized
     fun setSocket(){
         try {
-            mSocket= IO.socket("http://172.30.240.1:8888")
+            mSocket= IO.socket("http://192.168.56.1:8888")
         }catch (e: URISyntaxException){
             e.printStackTrace()
         }

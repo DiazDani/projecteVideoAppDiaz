@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        binding= ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
         Socket.setSocket()
         Socket.connection()
@@ -18,8 +18,9 @@ class MainActivity : AppCompatActivity() {
         val code = binding.editTextText.text
 
         binding.button.setOnClickListener{
-            Toast.makeText(this,"funca",Toast.LENGTH_SHORT).show()
             mSocket.emit("EnviarCodiPeli", code.toString())
+            println(mSocket.isActive)
+            Toast.makeText(this,"funca",Toast.LENGTH_SHORT).show()
 
         }
     }
